@@ -4,8 +4,278 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web-3-assign</title>
-</head>
-<body>
+  <!-- google font -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+   <!-- daisy ui and tailwind  -->
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .font-sora{
+        font-family: "Sora", serif;
+    }
     
+</style>
+</head>
+<body class="font-sora bg-white">
+    <!-- header page -->
+    <header class="bg-yellow-100 p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="c1-assets/logo-footer.png" alt="Browse4Pets Logo" class="h-8 w-8">
+            <span class="ml-2 text-xl font-bold">Browse<span class="text-yellow-500">4</span>Pets</span>
+        </div>
+        <nav class="hidden md:flex space-x-4">
+            <a href="#" class="text-gray-700">Find a pet</a>
+            <a href="#" class="text-gray-700">Breeds</a>
+            <a href="#" class="text-gray-700">Contact us</a>
+        </nav>
+        <div class="hidden md:flex space-x-2">
+            <button class="btn btn-outline">Login</button>
+            <button class="btn btn-primary">Register</button>
+        </div>
+        <div class="md:hidden">
+            <button class="btn btn-primary">Menu</button>
+        </div>
+    </header>
+    <section class="flex flex-col md:flex-row items-center mt-10 p-4">
+        <div class="md:w-1/2 text-center md:text-left">
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900">Pamper Your Pet, Because They Deserve the Best</h1>
+            <p class="text-gray-600 mt-4">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="btn btn-warning mt-6">Find a pet</button>
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
+            <img src="c1-assets/cat-big.png" alt="Kitten" class="w-full md:w-auto">
+        </div>
+    </section>
+
+</header>
+      <!--main page  -->
+<main>
+<!-- first page -->
+<section class="bg-gray-100">
+    <div class="max-w-5xl mx-auto py-10">
+        <h1 class="text-3xl font-bold text-left text-slate-900 mb-8">Browse By Categories</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-6  sm:grid-cols-2 gap-4">
+            <div class="bg-yellow-300 p-4 rounded-lg text-center">
+                <img src="c1-assets/dog-cartoon.png" alt="Dog Icon" class="mx-auto mb-2">
+                <h2 class="text-xl font-semibold">Dog</h2>
+                <p class="text-gray-700">3 items</p>
+            </div>
+            <div class="bg-yellow-300 p-4 rounded-lg text-center">
+                <img src="c1-assets/fish-cartoon.png" alt="Fish Icon" class="mx-auto mb-2">
+                <h2 class="text-xl font-semibold">Fish</h2>
+                <p class="text-gray-700">3 items</p>
+            </div>
+            <div class="bg-yellow-300 p-4 rounded-lg text-center">
+                <img src="c1-assets/cat-cartoon.png" alt="Cat Icon" class="mx-auto mb-2">
+                <h2 class="text-xl font-semibold">Cat</h2>
+                <p class="text-gray-700">3 items</p>
+            </div>
+            <div class="bg-yellow-300 p-4 rounded-lg text-center">
+                <img src="c1-assets/bird-cartoon.png" alt="Birds Icon" class="mx-auto mb-2">
+                <h2 class="text-xl font-semibold">Birds</h2>
+                <p class="text-gray-700">3 items</p>
+            </div>
+            <div class="bg-yellow-300 p-4 rounded-lg text-center">
+                <img src="c1-assets/mouse-cartoon.png" alt="Small Pet Icon" class="mx-auto mb-2">
+                <h2 class="text-xl font-semibold">Small pet</h2>
+                <p class="text-gray-700">3 items</p>
+            </div>
+            <div class="bg-yellow-300 p-4 rounded-lg text-center">
+                <img src="c1-assets/rabbit-cartoon.png" alt="Rabbit Icon" class="mx-auto mb-2">
+                <h2 class="text-xl font-semibold">Rabbit</h2>
+                <p class="text-gray-700">2 items</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--2 next page -->
+<section class=" md:flex">
+
+    <div class="container mx-auto px-4 py-8 flex items-center">
+        <div class="w-1/2 text-left">
+            <h1 class="text-3xl font-bold mb-4">T-Shirt For Dogs</h1>
+            <p class="text-lg mb-4">Discover a world of treats, toys, and essentials handpicked for your furry friend.</p>
+            <button class="btn btn-primary">Shop Now</button>
+        </div>
+        <div class="w-1/2">
+            <img src="c1-assets/cute-pet-mid.png" alt="Dog T-Shirt" class="rounded-lg shadow-lg">
+        </div>
+    </div>
+
+    <!-- 2nd Div: 9 Card Image, 3 Columns, 3 Rows -->
+    <div class="container mx-auto px-4 py-8 grid grid-cols-3 gap-4">
+    
+        <div class="card w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <img class="mx-auto mb-2" src="c1-assets/dog-cartoon.png" alt="Pet Bed" class="w-full">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pet Bed</h2>
+                <p class="text-gray-700">$39.99</p>
+                <p class="text-yellow-500">★ ★ ★ ★ ★</p>
+            </div>
+        </div>
+        <div class="card w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <img class="mx-auto mb-2" src="c1-assets/fish-cartoon.png" alt="Pet Bed" class="w-full">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pet Bed</h2>
+                <p class="text-gray-700">$39.99</p>
+                <p class="text-yellow-500">★ ★ ★ ★ ★</p>
+            </div>
+        </div>
+        <div class="card w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <img  class="mx-auto mb-2" src="c1-assets/bird-cartoon.png" alt="Pet Bed" class="w-full">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pet Bed</h2>
+                <p class="text-gray-700">$39.99</p>
+                <p class="text-yellow-500">★ ★ ★ ★ ★</p>
+            </div>
+        </div>
+        <div class="card w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <img class="mx-auto mb-2" src="c1-assets/pet-couch.png" alt="Pet Bed" class="w-full">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pet Bed</h2>
+                <p class="text-gray-700">$39.99</p>
+                <p class="text-yellow-500">★ ★ ★ ★ ★</p>
+            </div>
+        </div>
+        <div class="card w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <img class="mx-auto mb-2"  src="c1-assets/pet-couch.png" alt="Pet Bed" class="w-full">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pet Bed</h2>
+                <p class="text-gray-700">$39.99</p>
+                <p class="text-yellow-500">★ ★ ★ ★ ★</p>
+            </div>
+        </div>
+        <div class="card w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <img class="mx-auto mb-2" src="c1-assets/bird-cartoon.png" alt="Pet Bed" class="w-full">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pet Bed</h2>
+                <p class="text-gray-700">$39.99</p>
+                <p class="text-yellow-500">★ ★ ★ ★ ★</p>
+            </div>
+        </div>
+        <div class="card w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <img class="mx-auto mb-2" src="c1-assets/fish-cartoon.png" alt="Pet Bed" class="w-full">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pet Bed</h2>
+                <p class="text-gray-700">$39.99</p>
+                <p class="text-yellow-500">★ ★ ★ ★ ★</p>
+            </div>
+        </div>
+        <div class="card w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <img class="mx-auto mb-2"  src="c1-assets/dog-cartoon.png" alt="Pet Bed" class="w-full">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pet Bed</h2>
+                <p class="text-gray-700">$39.99</p>
+                <p class="text-yellow-500">★ ★ ★ ★ ★</p>
+            </div>
+        </div>
+        <div class="card w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <img class="mx-auto mb-2" src="c1-assets/cat-cartoon.png" alt="Pet Bed" class="w-full">
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Pet Bed</h2>
+                <p class="text-gray-700">$39.99</p>
+                <p class="text-yellow-500">★ ★ ★ ★ ★</p>
+            </div>
+        </div>
+       
+
+    </div>
+
+
+
+</section>
+<!-- 3next page -->
+<section>
+
+   
+<div class="container mx-auto p-8"> 
+    <div class="flex flex-col md:flex-row gap-8">
+
+        <div class="md:w-1/2 flex flex-col md:items-start justify-center">
+            <div class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-lg p-6 shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-center md:text-left">Everyday Low Price</h2>
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-4">
+                    <img src="c1-assets/cute-dog-mid.png" alt="Pet Grooming Mitt" class="max-w-full h-auto rounded-lg shadow-md md:w-48">
+                    <div>
+                        <p class="text-lg font-medium">Under Price</p>
+                        <p class="text-xl font-bold">$7.99</p>
+                        <p class="mt-2">Pet Grooming Mitt<br>(Easy Hair Removal)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 flex flex-col md:items-start justify-center">
+            <div class="bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-lg p-6 shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-center md:text-left">Everyday Low Price</h2>
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-4">
+                    <div>
+                        <p class="text-xl font-bold">$7.99</p>
+                        <p class="mt-2">T-Shirt for Dogs</p>
+                    </div>
+                    <img src="c1-assets/cute-pet-mid.png" alt="Dog T-Shirt" class="max-w-full h-auto rounded-lg shadow-md md:w-48">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+</section>
+
+</main>
+ <!-- footer page -->
+<footer>
+    <!-- Image Section -->
+    <div class="flex justify-center my-8">
+        <img src="c1-assets/cute-pet-mid.png" alt="Dog in outfit" class="rounded-lg shadow-lg">
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-yellow-500 text-gray-800 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <h3 class="font-bold text-xl mb-2">Browse Pets</h3>
+                    <p>Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-2">Links</h3>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Find a pet</a></li>
+                        <li><a href="#" class="hover:underline">Breeds</a></li>
+                        <li><a href="#" class="hover:underline">Contact us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-2">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:underline"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#" class="hover:underline"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#" class="hover:underline"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="#" class="hover:underline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+            </div>
+        </div>
+
+
+
+</footer>
+
+
 </body>
 </html>
